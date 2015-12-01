@@ -4,7 +4,7 @@ This repository provides source and a demo for use of this AngularJS MarkdownDee
 
 A [**demo**](http://angularjs-markdowndeep-demo.appsoftware.com) for this project is available.
 
-This is the markdown editor that provides markdown editing capability at [iocontent.com](https://www.iocontent.com/documentation/markdown-editor), see this service for a full demonstration of client and server side processing using MarkdownDeep.
+This is the markdown editor that provides markdown editing capability at [**iocontent.com**](https://www.iocontent.com/documentation/markdown-editor), see this service for a full demonstration of client and server side processing using MarkdownDeep.
 
 MarkdownDeep is a robust markdown processing framework comprising both client and server side components. MarkdownDeep provides it's own UI library, however I needed to redesign the UI and chose to build using AngularJS. 
 
