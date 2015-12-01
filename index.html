@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="angularjsMarkdowndeep">
+<head>
+	<title>AngularJs Markdowndeep Demo</title>
+	
+	<!-- Import styles for icons and some simple markdown output styling -->
+	
+	<link rel="stylesheet" href="bower_components/foundation-icon-fonts/foundation-icons.css" />
+	<link rel="stylesheet" href="bower_components/github-markdown-css/github-markdown.css" />
+	
+	
+	<!-- 
+	Basic styling for rendering inline / full with preview mode in a split screen fashion. It is expected
+	that users of this project code will create their own styles, hence fairly rough work here
+	-->
+	
+	<link rel="stylesheet" href="/styles/app.css" />
+	
+	<!-- Depends on angularjs and jquery for dom manipulation -->
+	
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	
+	<!-- Markdowndeep script files versions same as at https://github.com/appsoftware/angularjs-markdowndeep -->
+	
+	<!-- Markdowndeep project home is here http://www.toptensoftware.com/markdowndeep/ -->
+	
+	<script src="/markdowndeep-lib/MarkdownDeep.js"></script>
+	<script src="/markdowndeep-lib/MarkdownDeepEditor.js"></script>
+	
+	<script src="/dist/angularjsMarkdowndeep.js"></script>
+	
+</head>
+<body>
+
+	<div markdowndeep-editor id="md-editor1" ng-model="scope.markdownContent" default-editor-height="300"></div>
+
+</body>

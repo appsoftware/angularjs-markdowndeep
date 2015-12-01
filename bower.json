@@ -1,0 +1,30 @@
+{
+  "name": "angularjs-markdowndeep",
+  "homepage": "https://github.com/appsoftware/angularjs-markdowndeep",
+  "authors": [
+    "Gareth Brown <gareth.brown@appsoftware.com>"
+  ],
+  "description": "AngularJS markdown editor backed by markdowndeep",
+  "main": "src/angularjsMarkdowndeep.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "Markdown",
+    "AngularJS"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-icon-fonts": "*",
+    "angular": "~1.4.8",
+    "jquery": "~2.1.4",
+    "github-markdown-css": "~2.1.1"
+  }
+}
