@@ -19,26 +19,7 @@
 	
 	}])
 
-	// This editor has a dependency on MarkdownDeep
-
-	// Script files downloaded for manual inclusion (saved in resources) installed to:
-	// Scripts\App\AngularJsApp\3rdParty\MarkdownDeep
-
-	// A client NuGet package is available but not used here: https://www.nuget.org/packages/MarkdownDeep.Full/
-
-	// The server side only edition is used in this project and is installed via NuGet
-	// https://www.nuget.org/packages/MarkdownDeep.NET/
-
-	// MarkdownDeep promises compatible client and server side HTML conversion. It also
-	// was easy to customise the UI and provided features like having links render target="_blank"
-	// in preview option.
-
-	// MarkdownDeep client side lib comprises 3 javascript files. Two are used here,
-	// and the UI file is omited as this directive implements a custom UI. Hooks
-	// for editor controls are still available
-
-	// Content/Scripts/App/AngularJsApp/3rdParty/MarkdownDeep/MarkdownDeep.min.js
-	// Content/Scripts/App/AngularJsApp/3rdParty/MarkdownDeep/MarkdownDeepEditor.min.js
+	// This editor has a dependency on MarkdownDeep client libraries
 
 	// Basic docs http://www.toptensoftware.com/markdowndeep/api
 
@@ -137,21 +118,6 @@
 				// Set initial display mode
 
 				scope.setDisplayMode('inline');
-
-				// We use the directive 'element' id to append to 
-				// id's as required by markdown editor to run. Notice
-				// them being loaded into template via scope, and fed into
-				// initialisation functions below
-
-				// Using a $timeout with no set interval is the same
-				// as running on post render - this is required as 
-				// template with modified ids is not completely set up on
-				// initial run through this link code
-
-				// Use showdown converter in place of simplemde converter.
-				// This is a well known parser with optional flavours (discovered
-				// by inspecting object and browsing git hub repo for code).
-				// https://github.com/showdownjs/showdown
 
 				var markdown = new MarkdownDeep.Markdown();
 

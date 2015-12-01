@@ -1,19 +1,34 @@
-﻿2015/12/01
+# AngularJS - MarkdownDeep
 
-Note that this is not the full set of JavaScript files available for MarkdownDeep, rather just a subset
-required to back the angularjsMarkdowndeep component.
+This repository provides source and a demo for use of this AngularJS MarkdownDeep UI directive. 
 
-The files available at http://www.toptensoftware.com/markdowndeep/, both .NET and JavaScript components are
-out of date compared to the public source code repository at https://github.com/toptensoftware/markdowndeep.
+A [demo](http://angularjs-markdowndeep-demo.appsoftware.com) for this project is available.
 
-Specifically ``` (backtick) demarked code blocks were not supported.
+This is the markdown editor that provides markdown editing capability at [iocontent.com](https://www.iocontent.com), checkout this service for a full demonstration of client and server side processing using MarkdownDeep.
 
-A fork has been taken at https://github.com/appsoftware/markdowndeep/. Note that it appeared that the uncompressed .js source files were ahead of the minified versions in the source repo, and so it assumed that these are also out of date, and only uncompressed versions have been copied to this project.
+MarkdownDeep is a robust markdown processing framework comprising both client and server side components. MarkdownDeep provides it's own UI library, however I needed to redesign the UI and chose to build using AngularJS. 
+
+The markdown deep client libraries are split so that the UI is decoupleable from core markdown processing and event handling. As such only two of the client script files have been copied to this repository.
+
+## MarkdownDeep
+
+From [http://www.toptensoftware.com/markdowndeep/](http://www.toptensoftware.com/markdowndeep/)
+
+> MarkdownDeep is an open-source (read license) implementation of the increasingly popular web publishing syntax Markdown. MarkdownDeep provides a high performance implementation for ASP.NET web-servers along with a compatible JavaScript implementation for client side use.
+
+Please check the original MarkdownDeep project licences before inclusion in your project it may differ from the licence we have granted for use of code specific to this repository.
+
+## MarkdownDeep Versions
+
+At the time of writing, the client and server libraries available at [https://github.com/toptensoftware/markdowndeep](https://github.com/toptensoftware/markdowndeep) are several revisions ahead of the files that can be downloaded from the [official project home page](http://www.toptensoftware.com/markdowndeep/).
+
+We needed bug fixes that have been included since the latest stable version release, and have forked the GitHub repo to [https://github.com/appsoftware/markdowndeep](https://github.com/appsoftware/markdowndeep).
+
+While our fork may not track future bugfixes in MarkdownDeep, it is compatible with this AngularJS directive. .NET C# server side processing code is available in this repository also. 
+
+Please see official documentation for the [API reference](http://www.toptensoftware.com/markdowndeep/api).
 
 
-The corresponding server side processing code is compatible and the most uptodate verion is also available from https://github.com/appsoftware/markdowndeep/ or https://github.com/toptensoftware/markdowndeep
+## Demo Project Styling
 
-Use of the appsoftware fork is recommended as both client side and server side markdown processing have been tested together.
-
-
- 
+This project includes some rough styling to demonstrate the split screen preview and synced scrolling mechanism. It is expect that anyone integrating this project will update they stylesheet(s) according to their own tastes and requirements.
